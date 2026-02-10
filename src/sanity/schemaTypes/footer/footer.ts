@@ -44,7 +44,7 @@ export default defineType({
       name: 'email',
       title: 'Contact Email',
       type: 'string',
-      initialValue: 'studiocontact@nmpinteriors.co.uk'
+      initialValue: 'studiocontact@nmpinterior.co.uk'
     }),
     defineField({
       name: 'phone',
