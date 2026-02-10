@@ -2,33 +2,33 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'privacy',
-  title: 'Страница: Политика',
+  title: 'Page: Privacy Policy',
   type: 'document',
   fields: [
     defineField({
       name: 'title',
-      title: 'Заголовок страницы',
+      title: 'Page Title',
       type: 'string',
       initialValue: 'Privacy Policy'
     }),
     defineField({
       name: 'policyBlocks',
-      title: 'Блоки текста',
-      description: 'Добавляй сюда разделы (Introduction, Data we collect и т.д.)',
+      title: 'Text Blocks',
+      description: 'Add sections here (Introduction, Data we collect, etc.)',
       type: 'array',
       of: [
         {
           type: 'object',
-          title: 'Раздел',
+          title: 'Section',
           fields: [
             defineField({
               name: 'heading',
-              title: 'Заголовок раздела (например, 1. Introduction)',
+              title: 'Section Heading (e.g., 1. Introduction)',
               type: 'string',
             }),
             defineField({
               name: 'text',
-              title: 'Текст раздела',
+              title: 'Section Text',
               type: 'text',
               rows: 6,
             }),
@@ -38,10 +38,10 @@ export default defineType({
     }),
     defineField({
       name: 'contactNote',
-      title: 'Текст внизу (контакты)',
+      title: 'Bottom Text (Contact)',
       type: 'text',
       rows: 2,
-      initialValue: 'If you have any questions about this privacy policy, please contact us at studiocontact@nmpinteriors.co.uk'
+      initialValue: 'If you have any questions about this privacy policy, please contact us at contact@nmpinterior.co.uk'
     }),
   ],
 })

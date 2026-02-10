@@ -2,19 +2,19 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'projects',
-  title: 'Проект (Portfolio Item)',
+  title: 'Project (Portfolio Item)',
   type: 'document',
   fields: [
     defineField({
       name: 'title',
-      title: 'Название проекта',
+      title: 'Project Title',
       type: 'string',
       validation: (rule) => rule.required(),
     }),
 
     defineField({
       name: 'slug',
-      title: 'Ссылка (Slug)',
+      title: 'Slug',
       type: 'slug',
       options: {
         source: 'title',
@@ -25,15 +25,15 @@ export default defineType({
 
     defineField({
       name: 'description',
-      title: 'Краткое описание',
+      title: 'Short Description',
       type: 'text',
       rows: 3,
     }),
 
     defineField({
       name: 'images',
-      title: 'Галерея проекта',
-      description: 'Загрузи сюда все фото. Первая будет главной.',
+      title: 'Project Gallery',
+      description: 'Upload all photos here. The first one will be the main image.',
       type: 'array',
       of: [
         { 

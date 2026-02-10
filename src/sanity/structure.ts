@@ -6,31 +6,31 @@ export const structure: StructureResolver = (S) =>
     .items([
       
       S.listItem()
-        .title('Главная страница')
+        .title('Home Page')
         .child(
           S.list()
-            .title('Блоки Главной')
+            .title('Home Page Blocks')
             .items([
               S.listItem()
-                .title('1. Слайдер')
+                .title('1. Slider')
                 .child(S.document().schemaType('slider').documentId('mainSlider')),
               S.listItem()
-                .title('2. Текст Hero')
+                .title('2. Hero Text')
                 .child(S.document().schemaType('heroInfo').documentId('heroInfo')),
               S.listItem()
-                .title('3. Инфо Featured')
+                .title('3. Featured Info')
                 .child(S.document().schemaType('featuredInfo').documentId('featuredInfo')),
               S.listItem()
-                .title('4. Проекты (Список)')
-                .child(S.documentTypeList('project').title('Все проекты')),
+                .title('4. Projects (List)')
+                .child(S.documentTypeList('project').title('All Projects')),
               S.listItem()
-                .title('5. Блок Why NMP')
+                .title('5. Why NMP Block')
                 .child(S.document().schemaType('whyNmp').documentId('whyNmp')),
               S.listItem()
-                .title('6. Наш Подход (Approach)')
+                .title('6. Our Approach')
                 .child(S.document().schemaType('ourApproach').documentId('ourApproach')),
               S.listItem()
-                .title('7. Отзывы')
+                .title('7. Reviews')
                 .child(S.document().schemaType('reviews').documentId('reviews')),
             ])
         ),
@@ -38,13 +38,13 @@ export const structure: StructureResolver = (S) =>
       S.divider(), 
 
       S.listItem()
-        .title('Страница: Проекты')
+        .title('Page: Projects')
         .child(
             S.list()
-                .title('Управление Проектами')
+                .title('Project Management')
                 .items([
                     S.listItem()
-                        .title('Настройки страницы')
+                        .title('Page Settings')
                         .child(
                             S.document()
                                 .schemaType('projectsPage')
@@ -54,25 +54,25 @@ export const structure: StructureResolver = (S) =>
                     S.divider(),
 
                     S.documentTypeListItem('projects')
-                        .title('Все проекты'),
+                        .title('All Projects'),
                 ])
         ),
 
       S.divider(),
 
       S.listItem()
-       .title('Страница: О Нас')
+       .title('Page: About Us')
        .child(
          S.document()
            .schemaType('about')
            .documentId('about')
-           .title('Редактировать "О Нас"')
+           .title('Edit "About Us"')
        ),
 
       S.divider(),
 
       S.listItem()
-        .title('Страница Политики Конфиденциальности')
+        .title('Page: Privacy Policy')
         .child(
           S.document()
             .schemaType('privacy')
@@ -82,7 +82,7 @@ export const structure: StructureResolver = (S) =>
       S.divider(),
 
       S.listItem()
-        .title('Настройки Хедера')
+        .title('Header Settings')
         .child(
           S.document()
             .schemaType('header')
@@ -92,7 +92,7 @@ export const structure: StructureResolver = (S) =>
       S.divider(),
 
       S.listItem()
-        .title('Настройки Футера')
+        .title('Footer Settings')
         .child(
           S.document()
             .schemaType('footer')

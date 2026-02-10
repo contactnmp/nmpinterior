@@ -11,7 +11,7 @@ export async function POST(request: Request) {
 
     const data = await resend.emails.send({
       from: 'NMP Website <onboarding@nmpinterior.co.uk>',
-      to: ['contact@nmpinteriors.co.uk'],
+      to: ['savenkokirill891@gmail.com'],
       subject: `New Inquiry from ${firstName} ${lastName}`,
       react: EmailTemplate({ 
         firstName, 
