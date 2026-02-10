@@ -2,19 +2,19 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'project',
-  title: 'Проекты (Portfolio)',
+  title: 'Projects (Portfolio)',
   type: 'document',
   fields: [
     defineField({
       name: 'title',
-      title: 'Название проекта',
+      title: 'Project Title',
       type: 'string',
       validation: (rule) => rule.required(),
     }),
 
     defineField({
       name: 'mainImage',
-      title: 'Главное фото',
+      title: 'Main Image',
       type: 'image',
       options: {
         hotspot: true,
@@ -24,8 +24,8 @@ export default defineType({
 
     defineField({
       name: 'description',
-      title: 'Описание',
-      description: 'Текст, который выводится рядом с фото',
+      title: 'Description',
+      description: 'Text displayed next to the photo',
       type: 'text',
       rows: 4,
     }),

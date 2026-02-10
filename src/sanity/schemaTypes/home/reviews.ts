@@ -2,40 +2,40 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'reviews',
-  title: 'Блок: Отзывы (Reviews)',
+  title: 'Reviews Block',
   type: 'document',
   fields: [
     defineField({
       name: 'tagline',
-      title: 'Надзаголовок',
+      title: 'Tagline',
       type: 'string',
       initialValue: 'SATISFIED CUSTOMERS'
     }),
     defineField({
       name: 'heading',
-      title: 'Заголовок',
+      title: 'Heading',
       type: 'string',
       initialValue: 'Our Clients about Us'
     }),
     defineField({
       name: 'list',
-      title: 'Список отзывов',
+      title: 'Reviews List',
       type: 'array',
       of: [
         {
           type: 'object',
-          title: 'Отзыв',
+          title: 'Review',
           fields: [
             defineField({
               name: 'name',
-              title: 'Имя клиента',
+              title: 'Client Name',
               type: 'string',
-              description: 'Например: Amelia K.',
+              description: 'Example: Amelia K.',
               validation: (rule) => rule.required(),
             }),
             defineField({
               name: 'text',
-              title: 'Текст отзыва',
+              title: 'Review Text',
               type: 'text',
               rows: 3,
               validation: (rule) => rule.required(),

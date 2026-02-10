@@ -2,12 +2,12 @@ import { defineField, defineType } from 'sanity'
 
 export default defineType({
   name: 'slider',
-  title: 'Настройки: CЛАЙДЕРА',
+  title: 'Slider Settings',
   type: 'document',
   fields: [
     defineField({
       name: 'heroSlider',
-      title: 'Слайдер на первом экране',
+      title: 'Hero Screen Slider',
       type: 'array', 
       of: [
         { 
