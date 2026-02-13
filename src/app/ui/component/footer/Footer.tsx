@@ -101,9 +101,11 @@ const Footer = ({ data }: FooterProps) => {
                             {data.email}
                         </a>
                         
-                        <a href={`tel:${data.phone.replace(/\s/g, '')}`} className="hover:opacity-70 transition-opacity font-bold mt-2">
-                            Tel: {data.phone}
-                        </a>
+                        {data.phone && (
+                            <a href={`tel:${data.phone.replace(/\s/g, '')}`} className="hover:opacity-70 transition-opacity font-bold mt-2">
+                                Tel: {data.phone}
+                            </a>
+                        )}
                     </div>
 
                 </div>
