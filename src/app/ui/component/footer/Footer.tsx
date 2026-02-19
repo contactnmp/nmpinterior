@@ -106,6 +106,10 @@ const Footer = ({ data }: FooterProps) => {
                                 Tel: {data.phone}
                             </a>
                         )}
+
+                        <a href='https://api.whatsapp.com/qr/UNR2QA6X5EJSH1?autoload=1&app_absent=0' className="hover:opacity-70 transition-opacity font-bold mt-2">
+                            Website design by Oleksandra
+                        </a>
                     </div>
 
                 </div>
