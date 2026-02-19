@@ -50,7 +50,7 @@ const Privacy = ({ data }: PrivacyProps) => {
                         <h2 className="font-serif text-[#021A62] text-2xl md:text-3xl">
                             {block.heading}
                         </h2>
-                        <p className="text-[#424346CC] text-base md:text-lg font-light leading-relaxed whitespace-pre-wrap">
+                        <p className="text-[#424346]/80 text-base md:text-lg font-medium leading-relaxed whitespace-pre-wrap">
                             {block.text}
                         </p>
                     </motion.div>
@@ -61,7 +61,7 @@ const Privacy = ({ data }: PrivacyProps) => {
                         variants={textVariant}
                         className="mt-4 border-l-[1px] border-[#021A62]/30 pl-6 py-2"
                     >
-                        <p className="text-[#424346CC]/80 text-sm md:text-sm font-light italic leading-relaxed">
+                        <p className="text-[#424346]/80 text-sm md:text-sm font-medium italic leading-relaxed">
                             {data.contactNote}
                         </p>
                     </motion.div>

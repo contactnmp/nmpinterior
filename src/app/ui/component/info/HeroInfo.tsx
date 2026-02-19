@@ -28,7 +28,7 @@ const HeroInfo = ({ title, description, buttonText }: HeroInfoProps) => {
                         variants={textVariant}
                         initial='hidden'
                         whileInView='visible'
-                        className="font-serif text-[#021A62] text-4xl md:text-[64px] leading-[1.1] mb-5 max-w-[850px]"
+                        className="font-serif text-[#021A62] font-semibold text-4xl md:text-[64px] leading-[1.1] mb-5 max-w-[850px]"
                     >
                         {title || "Thoughtful design, calm confidence"} 
                     </motion.h1>
@@ -37,7 +37,7 @@ const HeroInfo = ({ title, description, buttonText }: HeroInfoProps) => {
                         variants={textVariant}
                         initial='hidden'
                         whileInView='visible'
-                        className="text-[#424346CC] text-base md:text-[18px] font-light mb-10 max-w-[600px] leading-relaxed"
+                        className="text-[#424346]/80 text-base md:text-[18px] font-medium mb-10 max-w-[600px] leading-relaxed"
                     >
                         {description}
                     </motion.p>

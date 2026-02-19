@@ -42,7 +42,7 @@ const ProjectItem = ({ project, index, isTall }: ProjectProps) => {
                         )}
                     </div>
 
-                    <p className="font-serif text-[#424346CC] text-lg my-5 md:text-xl tracking-wide md:my-10 transition-colors duration-300">
+                    <p className="font-serif text-[#424346]/80 text-lg my-5 md:text-xl tracking-wide md:my-10 transition-colors duration-300">
                         {project.title}
                     </p>
                 </Link>

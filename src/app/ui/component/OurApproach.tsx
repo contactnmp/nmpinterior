@@ -36,7 +36,7 @@ const OurApproach = ({ data }: OurApproachProps) => {
                 >
                     <motion.span 
                         variants={textVariant}
-                        className="block text-[#424346CC]/60 text-xs md:text-sm tracking-[0.2em] uppercase font-medium mb-10"
+                        className="block text-[#424346]/80 font-medium text-xs md:text-sm tracking-[0.2em] uppercase mb-10"
                     >
                         {data.tagline}
                     </motion.span>
@@ -44,20 +44,20 @@ const OurApproach = ({ data }: OurApproachProps) => {
                     <div>
                         <motion.h3 
                             variants={textVariant}
-                            className="font-serif text-[#021A62] text-2xl md:leading-[1.3] font-medium mb-6"
+                            className="font-serif text-[#021A62] font-semibold text-2xl md:leading-[1.3] mb-6"
                         >
                             {data.heading1}
                         </motion.h3>
                         <motion.h3 
                             variants={textVariant}
-                            className="font-serif text-[#021A62] text-2xl md:leading-[1.3] font-medium mb-8"
+                            className="font-serif text-[#021A62] text-2xl md:leading-[1.3] font-semibold mb-8"
                         >
                             {data.heading2}
                         </motion.h3>
                         
                         <motion.p 
                             variants={textVariant}
-                            className="text-[#424346CC]/70 text-[15px] leading-relaxed font-light mb-10 max-w-[500px]"
+                            className="text-[#424346]/80 text-[15px] leading-relaxed font-medium mb-10 max-w-[500px]"
                         >
                             {data.description}
                         </motion.p>

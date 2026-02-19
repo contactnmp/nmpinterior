@@ -56,7 +56,7 @@ const Project = ({ projects }: ProjectProps) => {
                                         variants={textVariant}
                                         initial='hidden'
                                         whileInView='visible'
-                                        className="font-serif text-[#021A62] text-3xl md:text-[40px] mb-4"
+                                        className="font-serif font-semibold text-[#021A62] text-3xl md:text-[40px] mb-4"
                                     >
                                         {project.title}
                                     </motion.h3>
@@ -64,7 +64,7 @@ const Project = ({ projects }: ProjectProps) => {
                                         variants={textVariant}
                                         initial='hidden'
                                         whileInView='visible'
-                                        className="text-[#424346CC] font-light text-base md:text-lg max-w-[400px] leading-relaxed"
+                                        className="text-[#424346]/80 font-medium text-base md:text-lg max-w-[400px] leading-relaxed"
                                     >
                                         {project.description}
                                     </motion.p>
@@ -74,7 +74,7 @@ const Project = ({ projects }: ProjectProps) => {
                             <div className="w-full flex flex-col items-center gap-16 my-5 md:my-10">
                                 {isLast && (
                                     <Button>
-                                        <Link href='/projects' className="text-[#021A62]">
+                                        <Link href='/projects' className="text-[#021A62] font-medium">
                                             Explore all projects
                                         </Link>
                                     </Button>

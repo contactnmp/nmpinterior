@@ -41,5 +41,28 @@ export default defineType({
       },
       validation: (rule) => rule.required(),
     }),
+    defineField({
+      name: 'secondaryImage',
+      title: 'Secondary Image (Left)',
+      description: 'Photo of Anastasiia or other team member',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
+      name: 'secondaryDescription1',
+      title: 'Secondary Text (Paragraph 1)',
+      description: 'E.g., Meet Anastasiia...',
+      type: 'text',
+      rows: 3,
+    }),
+    defineField({
+      name: 'secondaryDescription2',
+      title: 'Secondary Text (Paragraph 2)',
+      description: 'E.g., She is equally passionate...',
+      type: 'text',
+      rows: 3,
+    }),
   ],
 })

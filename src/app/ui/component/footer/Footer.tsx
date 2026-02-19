@@ -56,7 +56,7 @@ const Footer = ({ data }: FooterProps) => {
                                 />
                             )}
                         </div>
-                        <p className="text-sm text-[#021A62]/60 mt-auto pt-10 md:pt-0">
+                        <p className="text-sm text-[#021A62]/60 font-medium mt-auto pt-10 md:pt-0">
                             {data.copyright}
                         </p>
                     </div>

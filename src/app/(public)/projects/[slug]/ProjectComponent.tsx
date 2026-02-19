@@ -28,11 +28,11 @@ const ProjectComponent = ({ data }: ProjectDetailProps) => {
                 variants={fadeInUp}
                 className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-4 md:mb-6"
             >
-                <h1 className="font-serif font-semibold text-[#424346CC]/80 text-4xl md:text-[50px] leading-tight max-w-2xl">
+                <h1 className="font-serif font-semibold text-[#424346]/80 text-4xl md:text-[50px] leading-tight max-w-2xl">
                     {data.title}
                 </h1>
 
-                <p className="text-[#424346CC]/80  text-sm md:text-base font-light leading-relaxed max-w-2xl text-left">
+                <p className="text-[#424346]/80  text-sm md:text-base font-medium leading-relaxed max-w-2xl text-left">
                     {data.description}
                 </p>
             </motion.div>

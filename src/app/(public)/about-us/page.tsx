@@ -30,7 +30,10 @@ const AboutPage = async () => {
       description1,
       description2,
       quote,
-      mainImage
+      mainImage,
+      secondaryImage,   
+      secondaryDescription1,
+      secondaryDescription2
     }
   `, {}, { cache: 'no-store' });
 
