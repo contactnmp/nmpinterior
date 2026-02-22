@@ -31,7 +31,7 @@ const Footer = ({ data }: FooterProps) => {
             <div className="w-full max-w-[1440px] mx-auto">
                 
                 <div className="mb-20">
-                    <h2 className="text-4xl md:text-5xl font-serif mb-8 tracking-tight">
+                    <h2 className="font-semibold text-4xl md:text-5xl font-serif mb-8 tracking-tight">
                         {data.ctaHeading}
                     </h2>
                     <div className="w-fit">
@@ -43,7 +43,7 @@ const Footer = ({ data }: FooterProps) => {
 
                 <Line className="mb-10"/>
 
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-4 text-[15px] leading-relaxed">
+                <div className="font-sans grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-4 text-[15px] leading-relaxed">
                     
                     <div className="flex flex-col justify-between h-full min-h-[150px]">
                         <div className="w-[180px] relative h-[80px]">
@@ -61,33 +61,33 @@ const Footer = ({ data }: FooterProps) => {
                         </p>
                     </div>
 
-                    <div className="flex flex-col gap-3 font-bold">
-                        <Link href="/" className="hover:opacity-70 transition-opacity">
+                    <div className="flex flex-col gap-3">
+                        <Link href="/" className="font-medium text-lg hover:opacity-70 transition-opacity">
                             Home
                         </Link>
-                        <Link href="/projects" className="hover:opacity-70 transition-opacity">
+                        <Link href="/projects" className="font-medium text-lg hover:opacity-70 transition-opacity">
                             Projects
                         </Link>
-                        <Link href="/about-us" className="hover:opacity-70 transition-opacity">
+                        <Link href="/about-us" className="font-medium text-lg hover:opacity-70 transition-opacity">
                             About us
                         </Link>
                     </div>
 
                     <div className="flex flex-col gap-6">
-                        <div className="flex flex-col gap-3 font-bold">
-                            <Link href="/privacy" className="hover:opacity-70 transition-opacity">
+                        <div className="flex flex-col gap-3">
+                            <Link href="/privacy" className="font-medium text-lg hover:opacity-70 transition-opacity">
                                 Privacy Policy
                             </Link>
                         </div>
                         
                         <div className="flex gap-4">
                             {data.instagram && (
-                                <Link href={data.instagram} target="_blank" className="hover:opacity-70 transition-opacity">
+                                <Link href={data.instagram} target="_blank" className="font-medium text-lg hover:opacity-70 transition-opacity">
                                     <Instagram size={24} strokeWidth={1.5} />
                                 </Link>
                             )}
                             {data.facebook && (
-                                <Link href={data.facebook} target="_blank" className="hover:opacity-70 transition-opacity">
+                                <Link href={data.facebook} target="_blank" className="font-medium text-lg hover:opacity-70 transition-opacity">
                                     <Facebook size={24} strokeWidth={1.5} />
                                 </Link>
                             )}
@@ -95,19 +95,19 @@ const Footer = ({ data }: FooterProps) => {
                     </div>
 
                     <div className="flex flex-col gap-1">
-                        <span className="font-bold mb-2">Contact us:</span>
+                        <span className="font-medium text-lg mb-2">Contact us:</span>
                         
-                        <a href={`mailto:${data.email}`} className="hover:opacity-70 transition-opacity font-bold">
+                        <a href={`mailto:${data.email}`} className="font-medium text-lg hover:opacity-70 transition-opacity ">
                             {data.email}
                         </a>
                         
                         {data.phone && (
-                            <a href={`tel:${data.phone.replace(/\s/g, '')}`} className="hover:opacity-70 transition-opacity font-bold mt-2">
+                            <a href={`tel:${data.phone.replace(/\s/g, '')}`} className="font-medium text-lg hover:opacity-70 transition-opacity mt-2">
                                 Tel: {data.phone}
                             </a>
                         )}
 
-                        <a href='https://api.whatsapp.com/qr/UNR2QA6X5EJSH1?autoload=1&app_absent=0' className="hover:opacity-70 transition-opacity font-bold mt-2">
+                        <a href='https://api.whatsapp.com/qr/UNR2QA6X5EJSH1?autoload=1&app_absent=0' className="font-medium text-lg hover:opacity-70 transition-opacity mt-2">
                             Website design by Oleksandra
                         </a>
                     </div>

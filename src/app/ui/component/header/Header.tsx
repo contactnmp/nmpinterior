@@ -36,14 +36,14 @@ const Header = ({ data }: HeaderProps) => {
     }, [isOpen])
 
     return (
-        <header className="py-4 md:py-6 relative bg-[#FFFFF4]">
+        <header className="py-4 md:py-6 relative bg-[#FFFFF4] font-sans">
             <div className="w-full max-w-[1440px]">
                 <div className="grid grid-cols-2 md:grid-cols-3 items-center">
                     
                     <nav className="hidden md:flex gap-10 lg:gap-20">
                         {LINK.map((i, index) => (
                             <Link 
-                                className="text-[#021A62] font-bold text-lg tracking-wide transition-colors duration-300 hover:text-[#424346]/80"
+                                className="text-[#021A62] font-medium text-lg tracking-wide transition-colors duration-300 hover:text-[#424346]/80"
                                 href={i.url}
                                 key={index}
                             >
@@ -75,7 +75,7 @@ const Header = ({ data }: HeaderProps) => {
                     </div>
 
                     <div className="hidden md:flex justify-self-end">
-                        <Button onClick={openPopup} style="font-bold text-lg">
+                        <Button onClick={openPopup} style="text-lg">
                             {data?.buttonText || "Get in touch"}
                         </Button>
                     </div>

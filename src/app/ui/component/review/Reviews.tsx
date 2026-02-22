@@ -30,7 +30,7 @@ const Reviews = ({ data }: ReviewsProps) => {
                         initial='hidden'
                         whileInView='visible'
                         viewport={{ once: true }}
-                        className="text-[#424346]/80 text-xs md:text-sm tracking-[0.2em] uppercase font-medium"
+                        className="font-sans text-[#424346]/80 text-xs md:text-sm tracking-[0.2em] uppercase font-medium"
                     >
                         {data.tagline}
                     </motion.span>
@@ -40,7 +40,7 @@ const Reviews = ({ data }: ReviewsProps) => {
                         initial='hidden'
                         whileInView='visible'
                         viewport={{ once: true }}
-                        className="font-serif text-[#021A62] font-medium text-3xl md:text-[50px] leading-[1.1]"
+                        className="font-serif text-[#021A62] font-semibold text-3xl md:text-[40px] leading-[1.1]"
                     >
                         {data.heading}
                     </motion.h2>
@@ -66,7 +66,7 @@ const Reviews = ({ data }: ReviewsProps) => {
                             >
                                 <motion.p 
                                     variants={textVariant}
-                                    className="text-[#424346]/80 text-[15px] leading-relaxed font-medium mb-8 italic"
+                                    className="text-[#424346]/80 text-[15px] leading-relaxed font-medium mb-8"
                                 >
                                     {review.text}
                                 </motion.p>
@@ -74,7 +74,7 @@ const Reviews = ({ data }: ReviewsProps) => {
                                 <div>
                                     <motion.h4 
                                         variants={textVariant}
-                                        className="text-[#021A62] font-bold text-lg mb-2"
+                                        className="font-sans text-[#021A62] text-lg mb-2"
                                     >
                                         {review.name}
                                     </motion.h4>

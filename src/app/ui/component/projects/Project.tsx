@@ -64,7 +64,7 @@ const Project = ({ projects }: ProjectProps) => {
                                         variants={textVariant}
                                         initial='hidden'
                                         whileInView='visible'
-                                        className="text-[#424346]/80 font-medium text-base md:text-lg max-w-[400px] leading-relaxed"
+                                        className="font-sans text-[#424346]/80 font-medium text-base md:max-w-[400px] leading-relaxed"
                                     >
                                         {project.description}
                                     </motion.p>
@@ -74,7 +74,7 @@ const Project = ({ projects }: ProjectProps) => {
                             <div className="w-full flex flex-col items-center gap-16 my-5 md:my-10">
                                 {isLast && (
                                     <Button>
-                                        <Link href='/projects' className="text-[#021A62] font-medium">
+                                        <Link href='/projects' className="text-[#021A62]">
                                             Explore all projects
                                         </Link>
                                     </Button>

@@ -25,7 +25,7 @@ const OurApproach = ({ data }: OurApproachProps) => {
 
     return (
         <section className="pb-20 md:pb-32">
-            <div className="flex flex-col md:flex-row gap-10 md:gap-20 items-stretch mb-10 md:mb-15">
+            <div className="font-sans flex flex-col md:flex-row gap-10 md:gap-20 items-stretch mb-10 md:mb-15">
                 
                 <motion.div 
                     variants={textContainer}
@@ -44,13 +44,13 @@ const OurApproach = ({ data }: OurApproachProps) => {
                     <div>
                         <motion.h3 
                             variants={textVariant}
-                            className="font-serif text-[#021A62] font-semibold text-2xl md:leading-[1.3] mb-6"
+                            className="font-serif text-[#021A62] font-medium text-2xl md:leading-[1.3] mb-6"
                         >
                             {data.heading1}
                         </motion.h3>
                         <motion.h3 
                             variants={textVariant}
-                            className="font-serif text-[#021A62] text-2xl md:leading-[1.3] font-semibold mb-8"
+                            className="font-serif text-[#021A62] font-medium text-2xl md:leading-[1.3] mb-8"
                         >
                             {data.heading2}
                         </motion.h3>

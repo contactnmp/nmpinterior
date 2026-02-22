@@ -17,7 +17,7 @@ const MobileMenu = ({ links, onClose }: MobileMenuProps) => {
             initial="initial"
             animate="animate"
             exit="exit"
-            className="fixed left-0 top-0 w-full h-screen origin-top bg-[#FFFFF4] text-[#021A62] p-10 z-40 flex flex-col justify-center items-center"
+            className="font-sans fixed left-0 top-0 w-full h-screen origin-top bg-[#FFFFF4] text-[#021A62] p-10 z-40 flex flex-col justify-center items-center"
         >
             <div className="flex flex-col h-full justify-center">
                 <motion.div 
@@ -32,7 +32,7 @@ const MobileMenu = ({ links, onClose }: MobileMenuProps) => {
                             <motion.div variants={mobileLinkVars}>
                                 <Link 
                                     href={link.url}
-                                    className="text-4xl md:text-5xl font-light tracking-wide uppercase"
+                                    className="text-4xl md:text-5xl font-medium tracking-wide uppercase"
                                     onClick={onClose}
                                 >
                                     {link.label}
@@ -41,7 +41,7 @@ const MobileMenu = ({ links, onClose }: MobileMenuProps) => {
                         </div>
                     ))}
                     
-                    <div className="overflow-hidden mt-6">
+                    <div className="overflow-hidden mt-6 font-medium">
                         <motion.div variants={mobileLinkVars}>
                             <Button onClick={openPopup}>
                                 Get in touch

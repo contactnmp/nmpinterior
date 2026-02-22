@@ -32,12 +32,12 @@ const AboutComponent = ({ data }: AboutComponentProps) => {
                 transition={{ duration: 0.8 }}
                 className="flex justify-center mb-10 md:mb-15"
             >
-                <h1 className="font-serif text-[#021A62] text-4xl md:text-[64px]">
+                <h1 className="font-serif font-semibold text-[#021A62] text-4xl md:text-5xl">
                     {data.title}
                 </h1>
             </motion.div>
 
-            <div className="flex flex-col md:flex-row gap-10 md:gap-20 items-start">
+            <div className="flex flex-col md:flex-row gap-10 md:gap-20 items-start font-sans">
                 <motion.div 
                     variants={textContainer}
                     initial="hidden"
@@ -47,14 +47,14 @@ const AboutComponent = ({ data }: AboutComponentProps) => {
                 >
                     <motion.p 
                         variants={textVariant}
-                        className="text-[#424346]/80 text-base md:text-lg font-medium leading-relaxed"
+                        className="text-[#424346]/80 text-base md:font-medium leading-relaxed"
                     >
                         {data.description1}
                     </motion.p>
 
                     <motion.p 
                         variants={textVariant}
-                        className="text-[#424346]/80 text-base md:text-lg font-medium leading-relaxed"
+                        className="text-[#424346]/80 text-base md:font-medium leading-relaxed"
                     >
                         {data.description2}
                     </motion.p>
@@ -64,7 +64,7 @@ const AboutComponent = ({ data }: AboutComponentProps) => {
                             variants={textVariant}
                             className="mt-8 border-l-[1px] border-[#021A62]/30 pl-6"
                         >
-                            <p className="text-[#424346CC]/80 text-sm md:text-sm font-medium italic leading-relaxed">
+                            <p className="text-[#424346CC]/80 font-light italic text-base md:text-base leading-relaxed">
                                 {data.quote}
                             </p>
                         </motion.div>

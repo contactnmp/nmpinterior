@@ -66,7 +66,7 @@ const Popup = () => {
     };
 
     const getFieldStyles = (hasError: boolean) => ({
-        label: `text-sm mb-2 block transition-colors duration-300 ${
+        label: `text-lg font-medium mb-2 block transition-colors duration-300 ${
             hasError ? "text-[#AE4535CC]" : "text-[#424346CC]/80"
         }`,
         input: `w-full bg-transparent border-b py-2 text-[#021A62] text-lg outline-none transition-colors duration-300 ${
@@ -132,11 +132,11 @@ const Popup = () => {
                                         Let's Discuss Your Project
                                     </h2>
 
-                                    <p className="text-[#424346CC] text-base font-light mb-10 max-w-[450px]">
+                                    <p className="font-sans text-[#424346CC] text-xl font-medium mb-10 max-w-[450px]">
                                         We're here to support your next high-end, cutting-edge project. Please fill the form and we'll get back to you asap.
                                     </p>
 
-                                    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6">
+                                    <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-6 font-sans">
                                         
                                         <div>
                                             <label className={getFieldStyles(!!errors.firstName).label}>
@@ -205,7 +205,7 @@ const Popup = () => {
                                         </div>
 
                                         <div className="mt-4">
-                                            <label className="text-[#424346CC]/80 text-sm mb-4 block">
+                                            <label className="text-[#424346CC]/80 text-lg font-medium mb-4 block">
                                                 What space are you looking to design?
                                             </label>
                                             <div className="flex flex-col gap-3">
@@ -221,7 +221,7 @@ const Popup = () => {
                                                             })}
                                                             className="w-5 h-5 border border-[#424346CC]/30 rounded-none appearance-none cursor-pointer transition-all checked:border-[#021A62] checked:bg-center checked:bg-no-repeat checked:bg-[length:60%] checked:bg-[url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M4%209L7%2012L14%205%22%20stroke%3D%22%23021A62%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22square%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E')]"
                                                         />
-                                                        <span className="text-[#424346CC] font-light group-hover:opacity-70 transition-opacity">
+                                                        <span className="text-[#424346CC] font-medium text-lg group-hover:opacity-70 transition-opacity">
                                                             {item}
                                                         </span>
                                                     </label>
@@ -235,7 +235,7 @@ const Popup = () => {
                                         </div>
 
                                         <div className="mt-2">
-                                            <label className="text-[#424346CC]/80 text-sm mb-2 block">
+                                            <label className="text-[#424346CC]/80 text-lg font-medium mb-2 block">
                                                 When are you expecting to start?
                                             </label>
                                             <input 

@@ -32,7 +32,7 @@ const ProjectComponent = ({ data }: ProjectDetailProps) => {
                     {data.title}
                 </h1>
 
-                <p className="text-[#424346]/80  text-sm md:text-base font-medium leading-relaxed max-w-2xl text-left">
+                <p className="font-sans text-[#424346]/80 text-sm md:text-base font-medium leading-relaxed max-w-2xl text-left">
                     {data.description}
                 </p>
             </motion.div>

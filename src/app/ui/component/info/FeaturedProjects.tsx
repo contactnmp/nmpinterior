@@ -24,7 +24,7 @@ const FeaturedProjects = ({tagline, heading, description}: featuredProps) => {
                         variants={textVariant}
                         initial='hidden'
                         whileInView='visible'
-                        className="text-[#424346]/80 font-medium  text-xs md:text-sm tracking-[0.2em] uppercase mb-10 font-medium"
+                        className="font-sans text-[#424346]/80 font-medium text-sm md:tracking-[0.2em] uppercase mb-10"
                     >
                         {tagline}
                     </motion.span>
@@ -33,7 +33,7 @@ const FeaturedProjects = ({tagline, heading, description}: featuredProps) => {
                         variants={textVariant}
                         initial='hidden'
                         whileInView='visible'
-                        className="font-serif font-semibold text-[#021A62] text-4xl md:text-[56px] leading-[1.1] mb-5"
+                        className="font-serif font-semibold text-[#021A62] text-4xl md:text-[40px] leading-[1.1] mb-5"
                     >
                         {heading}
                     </motion.h2>
@@ -42,7 +42,7 @@ const FeaturedProjects = ({tagline, heading, description}: featuredProps) => {
                         variants={textVariant}
                         initial='hidden'
                         whileInView='visible'
-                        className="text-[#424346]/80 text-lg md:text-xl font-medium leading-relaxed max-w-[700px]"
+                        className="font-sans text-[#424346]/80 font-medium text-lg md:leading-relaxed max-w-[700px]"
                     >
                         {description}
                     </motion.p>

@@ -30,7 +30,7 @@ const ProjectsComponent = ({ projects }: ProjectsProps) => {
                 variants={textVariant}
                 className="flex justify-center mb-16 md:mb-24"
             >
-                <h2 className="font-serif text-[#021A62] text-3xl md:text-[50px]">
+                <h2 className="font-serif font-semibold text-[#021A62] text-3xl md:text-[50px]">
                     Projects
                 </h2>
             </motion.div>

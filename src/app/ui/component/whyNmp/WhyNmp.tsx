@@ -29,7 +29,7 @@ const WhyNmp = ({ data }: WhyNmpProps) => {
                     initial='hidden'
                     whileInView='visible'
                     viewport={{ once: true }}
-                    className="text-[#424346]/80 font-medium text-xs md:text-sm tracking-[0.2em] uppercase font-medium"
+                    className="font-sans text-[#424346]/80 font-medium text-xs md:text-sm tracking-[0.2em] uppercase"
                 >
                     {data.heading}
                 </motion.span>
@@ -45,7 +45,7 @@ const WhyNmp = ({ data }: WhyNmpProps) => {
                 </motion.h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-flow-col md:auto-cols-fr md:grid-rows-[auto_auto_1fr] mb-10 md:mb-15">
+            <div className="font-sans grid grid-cols-1 md:grid-flow-col md:auto-cols-fr md:grid-rows-[auto_auto_1fr] mb-10 md:mb-15">
                 {data.cards?.map((service, index) => (
                     <motion.div 
                         key={index}
@@ -64,7 +64,7 @@ const WhyNmp = ({ data }: WhyNmpProps) => {
 
                         <motion.h3
                             variants={textVariant}
-                            className="text-[#021A62] font-semibold text-xl mb-5 md:pl-8 md:pr-10"
+                            className="text-[#021A62] font-semibold text-2xl mb-5 md:pl-8 md:pr-10"
                         >
                             {service.title}
                         </motion.h3>
