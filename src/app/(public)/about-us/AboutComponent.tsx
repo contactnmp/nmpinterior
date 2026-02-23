@@ -11,7 +11,6 @@ interface AboutData {
     description2: string;
     quote: string;
     mainImage: any;
-    // Добавлены новые поля
     secondaryImage?: any;
     secondaryDescription1?: string;
     secondaryDescription2?: string;
@@ -93,7 +92,7 @@ const AboutComponent = ({ data }: AboutComponentProps) => {
             </div>
 
             {(data.secondaryImage || data.secondaryDescription1) && (
-                <div className="flex flex-col md:flex-row gap-10 md:gap-20 md:items-end">
+                <div className="flex flex-col md:flex-row gap-10 md:gap-20 md:items-end mt-20 md:mt-32">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.98 }}
                         whileInView={{ opacity: 1, scale: 1 }}
@@ -101,7 +100,7 @@ const AboutComponent = ({ data }: AboutComponentProps) => {
                         transition={{ duration: 0.8, delay: 0.3 }}
                         className="w-full md:w-1/2"
                     >
-                        <div className="relative w-full aspect-[440/586]">
+                        <div className="relative w-full md:max-w-[440px] aspect-[440/586]">
                             {data.secondaryImage && (
                                 <Image
                                     src={urlFor(data.secondaryImage).url()}
@@ -124,7 +123,7 @@ const AboutComponent = ({ data }: AboutComponentProps) => {
                         {data.secondaryDescription1 && (
                             <motion.p 
                                 variants={textVariant}
-                                className="text-[#424346] text-sm md:text-base font-medium leading-relaxed"
+                                className="font-sans text-[#424346] text-sm md:text-[15px] font-medium leading-relaxed"
                             >
                                 {data.secondaryDescription1}
                             </motion.p>
@@ -133,7 +132,7 @@ const AboutComponent = ({ data }: AboutComponentProps) => {
                         {data.secondaryDescription2 && (
                             <motion.p 
                                 variants={textVariant}
-                                className="text-[#424346] text-sm md:text-base font-medium leading-relaxed"
+                                className="font-sans text-[#424346] text-sm md:text-[15px] font-medium leading-relaxed"
                             >
                                 {data.secondaryDescription2}
                             </motion.p>

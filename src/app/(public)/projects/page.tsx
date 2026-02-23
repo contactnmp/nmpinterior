@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 
 export default async function ProjectsPage() {
   const projects = await client.fetch(`
-    *[_type == "projects"] | order(_createdAt desc) {
+    *[_type == "projects"] | order(_createdAt asc) {
       _id,
       title,
       slug,
