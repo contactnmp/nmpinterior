@@ -48,7 +48,7 @@ const Reviews = ({ data }: ReviewsProps) => {
 
                 <div className="flex flex-col mb-10 md:flex-row mb-15">
                     {data.list.map((review) => (
-                        <div key={review._key} className="flex flex-col md:flex-row flex-1">
+                        <div key={review._key} className="font-sans flex flex-col md:flex-row flex-1">
                             
                             <div className="hidden md:block w-[1px] self-stretch relative mr-8 shrink-0">
                                 <Line vertical className="h-full" delay={0.3} />
